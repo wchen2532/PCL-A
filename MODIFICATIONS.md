@@ -78,3 +78,16 @@ dotnet build "Plain Craft Launcher 2\PCL.Shadow.vbproj" -c Release
 
 上游 `LICENCE` 要求：重度修改版须自称「PCL XXX 修改版」、在关于页首位署名、继续开源、
 保留正版购买劝导，且 Windows 下主色相必须为蓝色。分发前请自行核对条款。
+
+## 7. 品牌调整为 PCL-A
+
+| 位置 | 改动 |
+| --- | --- |
+| `Plain Craft Launcher 2\FormMain.xaml` | 窗口标题 `Plain Craft Launcher　` → `PCL-A　` |
+| `Plain Craft Launcher 2\Application.xaml.vb` | 单实例查找窗口改为 `PCL-A　`（旧名保留为回退） |
+| `Plain Craft Launcher 2\PCL.Shadow.vbproj`、`Plain Craft Launcher 2.vbproj` | `AssemblyName` → `PCL-A`，产物为 `PCL-A.exe` |
+| 全部 `*.xaml` / `ModBase.vb`（共 15 处） | pack URI `/Plain Craft Launcher 2;component/…` → `/PCL-A;component/…` |
+| `My Project\AssemblyInfo.vb` | `AssemblyTitle` → `PCL-A 启动器（Plain Craft Launcher 修改版）`；`AssemblyProduct` 保持 `Plain Craft Launcher`，以免破坏 `ModModpack.vb:782` 的整合包启动器识别 |
+| `Pages\PageOther\PageOtherAbout.xaml` | 关于页首行改为「PCL-A（本仓库修改版）」+ 维护者与上游说明，头像换成 PCL 图标；龙腾猫跃 / HerobrineXia 两行保留 |
+
+许可要求的三项已满足：自称「PCL-A 修改版」、关于页首位署名（修改者在前，原作者在后）、继续开源（本仓库）、保留正版购买劝导与蓝色主色相（未改动主题）。

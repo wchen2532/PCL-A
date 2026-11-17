@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <!--
     PCL 影子构建工程（Shadow Build Project）
@@ -17,7 +17,7 @@
     <OutputType>WinExe</OutputType>
     <UseWPF>true</UseWPF>
     <RootNamespace>PCL</RootNamespace>
-    <AssemblyName>Plain Craft Launcher 2</AssemblyName>
+    <AssemblyName>PCL-A</AssemblyName>
     <MyType>Custom</MyType>
     <OptionStrict>Off</OptionStrict>
     <OptionExplicit>On</OptionExplicit>
